@@ -1,5 +1,7 @@
 # YTDownloader
 
+> ⚠️ **Disclaimer:** This tool is intended strictly for downloading content you have the legal right to download (e.g. your own videos, Creative Commons or public domain content). Downloading copyrighted material without the owner's permission may violate [YouTube's Terms of Service](https://www.youtube.com/static?template=terms) and applicable copyright laws in your country. The author of this project is **not responsible** for any misuse of this software.
+
 A simple Windows Forms application for downloading YouTube videos and audio using [yt-dlp](https://github.com/yt-dlp/yt-dlp) and [FFmpeg](https://ffmpeg.org/).
 
 ## Features
