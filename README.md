@@ -1,53 +1,49 @@
-# YTDownloader
+﻿# YT Downloader
 
-> ⚠️ **Disclaimer:** This tool is intended strictly for downloading content you have the legal right to download (e.g. your own videos, Creative Commons or public domain content). Downloading copyrighted material without the owner's permission may violate [YouTube's Terms of Service](https://www.youtube.com/static?template=terms) and applicable copyright laws in your country. The author of this project is **not responsible** for any misuse of this software.
+A simple Windows desktop app for downloading YouTube videos and audio.
 
-A simple Windows Forms application for downloading YouTube videos and audio using [yt-dlp](https://github.com/yt-dlp/yt-dlp) and [FFmpeg](https://ffmpeg.org/).
+![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.7.2-blue)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 
 ## Features
-
-- 📥 Download YouTube videos as **MP4** (4K / 1080p / 720p / best available)
-- 🎵 Download YouTube audio as **MP3**
-- 🔧 Automatically downloads `yt-dlp.exe` and `ffmpeg.exe` on first launch
-- 📂 Saves files to:
-  - `Downloads\Downloaded Video\MP4` (video)
-  - `Downloads\Downloaded Audio\MP3` (audio)
-- 🖱️ Button to open the download folder after downloading
+- Download YouTube videos as **MP4** (Best / 1080p / 720p / 480p / 360p)
+- Download YouTube audio as **MP3** (320 / 192 / 128 / 96 kbps)
+- Auto-fetches video title as filename (editable before download)
+- Custom save folders for MP4 and MP3 (saved between sessions)
+- Progress bar with processing indicator
+- Opens download folder after completion
+- `yt-dlp.exe` and `ffmpeg.exe` are **downloaded automatically** on first launch
 
 ## Requirements
+- Windows 10 / 11
+- .NET Framework 4.7.2 (pre-installed on Windows 10+)
+- Internet connection (first launch downloads yt-dlp and ffmpeg automatically)
 
-- Windows 10 or later
-- [.NET Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
-- Internet connection (for first-time tool download and for downloading videos)
-
-## How to Use
-
-1. Clone or download this repository
-2. Open `YTDowlnoad.slnx` in **Visual Studio**
-3. Build and run the project (`F5`)
+## Installation
+1. Download `YTDownloader.zip` from [Releases](../../releases)
+2. Extract all files to any folder
+3. Run `YTDownloader.exe`
 4. On first launch the app will automatically download `yt-dlp.exe` and `ffmpeg.exe`
-5. Paste a YouTube URL into the text box
-6. Choose the desired quality / format
-7. Click **Download MP4** or **Download MP3**
 
-## Building from Source
+## Usage
+1. Paste a YouTube link into the URL field
+2. Wait for the title to auto-fill in the **File name** field (or type your own)
+3. Select MP4 quality or MP3 bitrate
+4. Click **Download MP4** or **Download MP3**
+5. Click **Open download folder** when done
 
-```
-git clone https://github.com/garyblu71mods/YTDownloander.git
-cd YTDownloander
-```
+## Default save locations
+| Format | Folder |
+|--------|--------|
+| MP4 | `Downloads\Downloaded Video\MP4` |
+| MP3 | `Downloads\Downloaded Audio\MP3` |
 
-Open `YTDowlnoad.slnx` in Visual Studio 2022 or later and press **Build → Build Solution**.
+Folders can be changed in the app using the **Browse** buttons.
 
-## Dependencies
+## Powered by
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+- [FFmpeg](https://ffmpeg.org)
 
-| Tool | Source |
-|------|--------|
-| yt-dlp | https://github.com/yt-dlp/yt-dlp |
-| FFmpeg | https://github.com/BtbN/FFmpeg-Builds |
-
-Both tools are downloaded automatically at runtime and are **not** included in the repository.
-
-## License
-
-This project is open source. Feel free to fork and modify it.
+## Support
+If you find this app useful, consider contributing:  
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue)](https://www.paypal.com/paypalme/GaryBlu71)
